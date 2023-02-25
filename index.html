@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOCS</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ======== Navbar ================================================================== -->
+    <nav class="navbar navbar-light bg-light navbar-expand-lg sticky-top">
+        <div class="container-md">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/Logo.png" alt="TOCS" width="50" height="50" class="d-inline-block align-text-top" />
+                <span class="align-bottom fw-bold fs-2">TOCS</span>
+            </a>
+            <ul class="navbar-nav d-none d-lg-flex mx-auto ps-5">
+                <li class="nav-item">
+                    <a class="nav-link fs-5 fw-semibold text-uppercase mx-3" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5 fw-semibold text-uppercase mx-3" href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5 fw-semibold text-uppercase mx-3" href="./service.html">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fs-5 fw-semibold text-uppercase mx-3" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+            <a href="tel:999-014-9997"
+                class="d-none text-nowrap d-md-inline btn btn-dark shadow rounded-10 fs-5 px-md-4 pb-1 pt-2 fw-semibold">
+                <img src="./images/phone.png" class="mb-1 me-2" style="width: 2rem" />
+                <span>999-014-9997</span>
+            </a>
+            <a href="tel:999-014-9997"
+                class="d-inline d-md-none btn btn-dark shadow rounded-10 px-md-4 pb-2 pt-2 fw-semibold">
+                <img src="./images/phone.png" class="mb-1 me-2" style="width: 1rem" />
+                <span>999-014-9997</span>
+            </a>
+            <button class="navbar-toggler ms-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarToggler">
+                <ul class="navbar-nav d-lg-none">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="./service.html">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ======== Banner ================================================================== -->
+        <div class="spacer bg-light"></div>
+        <section class="position-relative banner-section bg-light pt-5" style="z-index: 1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 order-1 order-md-0">
+                        <h1 class="anim-up text-white fw-bold">All Service that you need</h1>
+                        <div class="anim-up bg-dark shadow rounded-20 p-4">
+                            <h4 class="text-white fw-semibold mb-3">Lorem ipsum dolor sit amet consectetur.</h4>
+                            <form action="" method="POST" class="fw-semibold">
+                                <input type="hidden" name="_subject" value="Service Request!" />
+                                <input type="text" name="_honey" style="display: none" />
+                                <input type="hidden" name="_template" value="table" />
+                                <div class="form-floating mb-3">
+                                    <select class="form-select rounded-10" id="serviceSelect" name="Category" required>
+                                        <option value="Air Conditioner">Air Conditioner</option>
+                                        <option value="Washing Machine">Washing Machine</option>
+                                        <option value="RO">RO</option>
+                                        <option value="Microwave">Microwave</option>
+                                        <option value="Chimney">Chimney</option>
+                                        <option value="Refrigerator">Refrigerator</option>
+                                        <option value="Geyser">Geyser</option>
+                                        <option value="Heater">Heater</option>
+                                        <option value="Electrician">Electrician</option>
+                                    </select>
+                                    <label for="serviceSelect">Service</label>
+                                </div>
+                                <div class="row g-1">
+                                    <div class="col-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control rounded-10" id="nameInput"
+                                                placeholder="Name" name="Name" required />
+                                            <label for="nameInput">Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control rounded-10" id="contactInput"
+                                                placeholder="Contact" name="Contact" required />
+                                            <label for="contactInput">Contact</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control rounded-10" id="messageInput" placeholder="Message"
+                                        style="height: 100px" name="Message" required></textarea>
+                                    <label for="messageInput">Message</label>
+                                </div>
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <input type="submit" value="Contact Now"
+                                        class="btn btn-lg btn-primary fw-semibold rounded-10 me-auto" />
+                                    <img src="./images/offerhands.png" style="height: 3rem" alt="Offer" />
+                                    <p class="text-white mb-0 ms-2" style="max-width: 12rem">
+                                        <span class="fs-4">20%</span> discount for online ordering services
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-end align-self-center">
+                        <img src="./images/tools.png" class="img-fluid w-75 anim-pop" alt="Tools" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="spacer bg-light"></div>
+        <!-- ======== About ================================================================== -->
+        <section class="bg-light">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-10 col-md-5 mb-5 mb-md-0 text-center">
+                        <img src="./images/worker.png" class="img-fluid anim-up" alt="worker" />
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <h1 class="fw-bold anim-up">Who we are.</h1>
+                        <p class="fs-4 anim-up">
+                            Incorporated in the year of 2022, TOCS is India’s leading service provider and offers
+                            Extended Warranty,
+                            AMC Plans, and On-Demand Repair Services. We cover all electronic home appliances like, AC,
+                            Washing
+                            Machine, Water Purifier, Microwave, Geyser, Chimney, Refrigerator, etc.The Platform helps
+                            customers to
+                            book high quality services by trained professional Electricians. Since our incorporation, we
+                            are
+                            offering optimum quality services for our valued customers.We only believe in customer
+                            satisfaction
+                            hence we are making efforts to expand our network to provide for the ever growing service
+                            needs of
+                            offices, buildings, and homes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="spacer d-none d-md-block" style="margin-top: -3rem; background-color: white"></div>
+        <div class="spacer"></div>
+
+        <!-- ======== Service ================================================================== -->
+        <section class="container">
+            <h2 class="display-5 fw-bold text-center">Our Service</h2>
+            <p class="h5 fw-semibold text-center mb-5">Lorem Ipsum is simply dummy</p>
+            <div class="row align-items-streach justify-content-center flex-wrap g-2 g-lg-3">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="rounded-20 p-3 h-100 border border-primary anim-up">
+                        <img class="pb-4" src="./images/Logo.png" alt="Washing Machine" />
+                        <h4 class="pb-2">RO</h4>
+                        <h5 class="pb-4">No visiting Charges</h5>
+                        <a href="./contact.html" class="btn btn-lg btn-primary fw-semibold rounded-20">Order
+                            Repair</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="rounded-20 p-3 h-100 border border-primary anim-up">
+                        <img class="pb-1" src="./images/Logo.png" alt="Washing Machine" />
+                        <h4 class="pb-4">Washing Machine</h4>
+                        <h5 class="pb-4">No visiting Charges</h5>
+                        <a href="./contact.html" class="btn btn-lg btn-primary fw-semibold rounded-20">Order Repair</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="rounded-20 p-3 h-100 border border-primary anim-up">
+                        <img class="pb-4" src="./images/Logo.png" alt="Washing Machine" />
+                        <h4 class="pb-2">Air Conditioner</h4>
+                        <h5 class="pb-4">No visiting Charges</h5>
+                        <a href="./contact.html" class="btn btn-lg btn-primary fw-semibold rounded-20">Order Repair</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="rounded-20 p-3 h-100 border border-primary anim-up">
+                        <img class="pb-4" src="./images/Logo.png" alt="Washing Machine" />
+                        <h4 class="pb-2">Microwave</h4>
+                        <h5 class="pb-4">No visiting Charges</h5>
+                        <a href="./contact.html" class="btn btn-lg btn-primary fw-semibold rounded-20">Order
+                            Repair</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="rounded-20 p-3 h-100 border border-primary anim-up">
+                        <img class="pb-4" src="./images/Logo.png" alt="Washing Machine" />
+                        <h4 class="pb-2">Chimney</h4>
+                        <h5 class="pb-4">No visiting Charges</h5>
+                        <a href="contact.html?c=Chimney" class="btn btn-lg btn-primary fw-semibold rounded-20">Order
+                            Repair</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="rounded-20 p-3 h-100 border border-primary anim-up">
+                        <img class="pb-4" src="./images/Logo.png" alt="Washing Machine" />
+                        <h4 class="pb-2">Refrigerator</h4>
+                        <h5 class="pb-4">No visiting Charges</h5>
+                        <a href="contact.html?c=Refrigerator"
+                            class="btn btn-lg btn-primary fw-semibold rounded-20">Order Repair</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="rounded-20 p-3 h-100 border border-primary anim-up">
+                        <img class="pb-4" src="./images/Logo.png" alt="Washing Machine" />
+                        <h4 class="pb-2">Geyser</h4>
+                        <h5 class="pb-4">No visiting Charges</h5>
+                        <a href="./contact.html" class="btn btn-lg btn-primary fw-semibold rounded-20">Order
+                            Repair</a>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="rounded-20 p-3 h-100 border border-primary anim-up">
+                        <img class="pb-4" src="./images/Logo.png" alt="Washing Machine" />
+                        <h4 class="pb-2">Heater</h4>
+                        <h5 class="pb-4">No visiting Charges</h5>
+                        <a href="contact.html?c=Heater" class="btn btn-lg btn-primary fw-semibold rounded-20">Order
+                            Repair</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="spacer"></div>
+
+        <!-- ======== Location ================================================================== -->
+        <section class="position-relative location-section" style="z-index: 1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 order-1 order-md-0 text-center">
+                        <h1 class="fw-bold text-white mt-5">We Are In</h1>
+                        <h3 class="bg-white rounded-20 fw-semibold py-2 my-3 anim-up">Noida</h3>
+                        <h3 class="bg-white rounded-20 fw-semibold py-2 my-3 anim-up">Greater Noida</h3>
+                        <h3 class="bg-white rounded-20 fw-semibold py-2 my-3 anim-up">Ghaziabad</h3>
+                    </div>
+                    <div class="col-12 col-md-6 text-center align-self-center">
+                        <img src="./images/map.png" class="img-fluid w-75 anim-pop" alt="Tools" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="spacer"></div>
+
+        <!-- ======== Testimonial  ================================================================== -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <div style="margin-top: -6rem">
+                    <div class="d-inline-block bg-primary rounded-circle shadow p-4 mb-5 anim-pop">
+                        <img src="./images/quot.svg" style="width: 5rem; margin: 0.5rem 0" alt="Testimonials" />
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-5">
+                        <h5 class="fw-semibold">What Customers Say About Us</h5>
+                        <p>
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
+                            of classical
+                            Latin literature.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <div class="d-flex gap-2" style="overflow-x: auto; padding-top: 3rem">
+                            <div class="col-11 col-md-5 flex-shrink-0 bg-primary text-white rounded-10 p-3 anim-up">
+                                <img src="./images/Avtar.png" class="rounded-circle shadow anim-pop"
+                                    style="width: 5rem; margin-top: -3rem" alt="Testimonials" />
+                                <h5 class="fw-semibold mt-3">Lorem, ipsum dolor.</h5>
+                                <p class="m-0">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of
+                                    classical Latin literature.
+                                </p>
+                            </div>
+                            <div class="col-11 col-md-5 flex-shrink-0 bg-primary text-white rounded-10 p-3 anim-up">
+                                <img src="./images/Avtar.png" class="rounded-circle shadow anim-pop"
+                                    style="width: 5rem; margin-top: -3rem" alt="Testimonials" />
+                                <h5 class="fw-semibold mt-3">Lorem, ipsum dolor.</h5>
+                                <p class="m-0">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of
+                                    classical Latin literature.
+                                </p>
+                            </div>
+                            <div class="col-11 col-md-5 flex-shrink-0 bg-primary text-white rounded-10 p-3 anim-up">
+                                <img src="./images/Avtar.png" class="rounded-circle shadow anim-pop"
+                                    style="width: 5rem; margin-top: -3rem" alt="Testimonials" />
+                                <h5 class="fw-semibold mt-3">Lorem, ipsum dolor.</h5>
+                                <p class="m-0">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of
+                                    classical Latin literature.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- <div class="d-flex gap-2 mt-3">
+                <span class="bg-primary rounded-circle p-1"></span>
+                <span class="bg-dark rounded-circle p-1"></span>
+                <span class="bg-dark rounded-circle p-1"></span>
+              </div> -->
+                    </div>
+                </div>
+                <div class="spacer"></div>
+            </div>
+        </section>
+        <!-- ======== Work  ================================================================== -->
+        <section class="bg-primary position-relative">
+            <div class="position-absolute work-section w-100" style="top: -3rem; z-index: 1">
+                <div class="container bg-dark shadow rounded-20 d-flex flex-wrap justify-content-between py-4">
+                    <div class="text-white ms-3 ms-md-0">
+                        <h3 class="fw-bold">Lorem Ipsum is dummy text</h3>
+                        <p class="">Lorem Ipsum is simply dummy</p>
+                    </div>
+                    <div>
+                        <a href="tel:999-014-9997" class="d-flex btn btn-dark rounded-10">
+                            <img src="./images/phone.png" class="me-2" style="width: 3rem" />
+                            <p class="m-0 text-start">
+                                <span class="fw-semibold fs-5">999-014-9997</span> <br />
+                                24*7 Open
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="overflow-hidden">
+                <div class="container pt-5">
+                    <div class="row g-0 pt-4">
+                        <div class="col-12 col-md-6">
+                            <img src="./images/hands.png" class="img-fluid position-relative hand-image anim-pop"
+                                alt="Work" />
+                        </div>
+                        <div class="col-12 col-md-6 pt-5">
+                            <div class="bg-dark rounded-20 shadow p-4 anim-up">
+                                <h2 class="fw-bold text-white">Want to work with us?</h2>
+                                <form action="" method="POST">
+                                    <input type="hidden" name="_subject" value="Work Request!" />
+                                    <input type="text" name="_honey" style="display: none" />
+                                    <input type="hidden" name="_template" value="table" />
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control rounded-10" id="nameInput"
+                                            placeholder="Name" name="Name" required />
+                                        <label for="nameInput">Name</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control rounded-10" id="contactInput"
+                                            placeholder="Contact" name="Contact" required />
+                                        <label for="contactInput">Contact</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control rounded-10" id="messageInput"
+                                            placeholder="Message" style="height: 100px" name="Message"
+                                            required></textarea>
+                                        <label for="messageInput">Message</label>
+                                    </div>
+                                    <input type="submit" value="Send Message"
+                                        class="btn btn-lg btn-primary rounded-10" />
+                                </form>
+                            </div>
+                            <div class="spacer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ======== Footer  ================================================================== -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container-md">
+            <div class="row mx-0">
+                <div class="col-6 col-lg-3 mb-5 mb-lg-0">
+                    <h6 class="fw-semibold">OUR SERVICES</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link px-0 py-1" href="#">Air Conditione</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0 py-1" href="#">Washing Machine</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0 py-1" href="#">Refrigerator</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0 py-1" href="#">Microwave</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0 py-1" href="#">Chimney</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 mb-5 mb-lg-0">
+                    <h6 class="fw-semibold text-dark">OUR SERVICES</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link px-0 py-1" href="#">Geyser</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0 py-1" href="#">RO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0 py-1" href="#">Heater</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 mb-5 mb-lg-0">
+                    <h6 class="fw-semibold">USEFUL LINKS</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link px-0 py-1" href="#">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0 py-1" href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0 py-1" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0 py-1" href="#">Our Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 mb-5 mb-lg-0">
+                    <h6 class="fw-semibold">FOLLOW US</h6>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link px-0 py-1" href="#"><img src="./images/icons8-facebook-96.png"
+                                    alt="Facebook" width="48px" /></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0 py-1" href="#"><img src="./images/icons8-instagram-96.png"
+                                    alt="Instagram" width="48px" /></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-0 py-1" href="#"><img src="./images/icons8-twitter-squared-96.png"
+                                    alt="Twitter" width="48px" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>
